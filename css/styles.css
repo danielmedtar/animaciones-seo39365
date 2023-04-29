@@ -1,0 +1,99 @@
+header {
+    background-color: #3dc754;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-link {
+    color: white;
+}
+
+.navbar-nav {
+    gap: 20px;
+}
+
+.navbar-toggler-icon {
+    background: url('https://api.iconify.design/mdi/hamburger-menu.svg?color=red') no-repeat center center / contain;
+    color: red;
+}
+
+.carousel-item img {
+    height: 250px;
+}
+
+@media (min-width: 900px) {
+    #carouselExample {
+        margin: 0 auto;
+        width: 70%;
+    }
+    .carousel-item img {
+        height: 550px;
+    }
+}
+
+.comidas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+@media (min-width: 768px) {
+    .comidas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    .comidas {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.card {
+    height: 420px;
+}
+
+.card-img-top {
+    height: 300px;
+}
+
+.descripciones {
+    margin: 0 auto;
+}
+
+.icono-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.icono-texto img {
+    width: 80px;
+    height: 80px;
+}
+
+.iconify {
+    font-size: 3rem;
+}
+
+.insta {
+    color: rgb(230, 70, 70);
+}
+
+.tik {
+    color: black;
+}
+
+.yout {
+    color: red;
+}
+
+.redes {
+    gap: 20px;
+}
