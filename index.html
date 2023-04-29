@@ -7,9 +7,17 @@
     <!-- CSS BOOTSTRAP. Siempre DEBE ir ANTES de nuestro CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- CSS PROPIO -->
     <link rel="stylesheet" href="css/styles.css">
-    <title>Animaciones y SEO</title>
+
+    <!-- ETIQUETAS SEO -->
+    <meta name="description" content="Bienvenidos al Coder Resto. Acá encontrarán los mejores productos de tu preferencia">
+
+    <meta name="keywords" content="Coderhouse, restaurante, bienvenidos, recetas, productos, cocina, comida, inicio">
+    <title>Clase 14 | Inicio</title>
 </head>
 <body>
     <header>
@@ -26,7 +34,7 @@
                   </li>
 
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Seccion 1</a>
+                    <a class="nav-link" href="pages/animaciones.html">Seccion 1</a>
                   </li>
 
                   <li class="nav-item">
@@ -83,9 +91,14 @@
 
     <main id="seccion2" class="container mt-4">
         <h2 class="text-center">Tenemos los mejores chef y las mejores recetas</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo quisquam facere animi ab exercitationem. Veniam vero saepe blanditiis accusantium veritatis nulla corrupti corporis ipsa. Soluta aliquam voluptatem corporis unde minima?</p>
+        <h3 class="text-center">Mira nuestros productos</h3>
 
-        <div class="comidas">
+        <!-- strong le digo al navegador y al bot que esa frase o palabra, para mi tiene mucha fuerza o mucha importancia dentro de mi sitio web -->
+        <p>
+          Lorem ipsum, <strong>dolor sit amet</strong> consectetur adipisicing elit. Explicabo quisquam facere animi <em>ab exercitationem</em>. Veniam vero saepe blanditiis accusantium veritatis nulla corrupti corporis ipsa. Soluta aliquam voluptatem corporis unde minima?
+        </p>
+
+        <div data-aos="fade-right" class="comidas">
             <!-- CARD 1 -->
             <div class="card" style="width: 18rem;">
                 <img src="img/card1.jpg" class="card-img-top" alt="...">
@@ -161,6 +174,11 @@
             </a>
         </div>
     </footer>
+
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init();</script>
+
 
     <!-- script iconify -->
     <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
